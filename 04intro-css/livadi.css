@@ -76,7 +76,7 @@ main ol {
 }
 
 main dl dt {
-    color: #e99b3e;
+    color: #4582a3;
     font-weight: 700;
     margin-top: 1rem;
 }
@@ -119,7 +119,7 @@ main address {
     width: 200px;
 }
 main a {
-    color:#e99b3e;
+    color:#4582a3;
     text-decoration: none;
 
 }
