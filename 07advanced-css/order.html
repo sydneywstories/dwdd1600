@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sydney Wilson">
+    <meta name="description" content="Introduction to Livadi's Narratives">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="livadi.css">
+    <title>Livadi's Arcana and Glass: Introduction</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- start the page head-->
+    <header>
+        <img src="images/logo.png" alt="Livadi's Arcana Logo" width="64" height="50">
+        <span>Livadi's Arcana and Glass</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="meettheteam.html">Meet The Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="order.html">Submit an Order</a></li>
+
+
+        </ul>
+
+
+    </nav>
+    <!-- start the main content -->
+    <main>
+        <h1>Make an Order for Your Brew</h1>
+        <form method="get" class="myForm" action="thankyou.html">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone Number* <input type="tel" name="phone" required></label>
+                <label>Email* <input type="email" name="email" required></label>
+                <label>Home Address* <input type="text" name="address" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bottle Shape</legend>
+                <label><input type="radio" name="method" value="smallstar">Small Star</label>
+                <label><input type="radio" name="method" value="smallsphere">Small Sphere</label>
+                <label><input type="radio" name="method" value="smallsquare">Small Square</label>
+                <label><input type="radio" name="method" value="smallteardrop">Small Teardrop</label>
+                <label><input type="radio" name="method" value="largecylinder">Large Cyliner</label>
+                <label><input type="radio" name="method" value="largepear">Large Pear</label>
+                <label><input type="radio" name="method" value="largeskull">Large Skull</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Potion Contents</legend>
+                <p>Added Flavoring</p>
+                <p class="moreflavors">*More Flavor Options to Come</p>
+                <label><input type="checkbox" name="mint" value="chosen"> Peppermint</label>
+                <label><input type="checkbox" name="chamomile" value="chosen"> Chamomile</label>
+                <label><input type="checkbox" name="guayusa" value="chosen"> Guayusa</label>
+                <label><input type="checkbox" name="hibiscus" value="chosen"> Hibiscus</label>
+                <label><input type="checkbox" name="gingerroot" value="chosen"> Ginger Root</label>
+                <label><input type="checkbox" name="none" value="chosen"> None</label>
+
+                <label>Selected Potion
+                    <select required name="potion">
+                        <option value="" disabled selected>Make a Selection</option>
+                        <option value="elio">Elio's Bottle of Bravery</option>
+                        <option value="savalin01">Savalin's Bottle of Flight (Regular)</option>
+                        <option value="savalin02">Savalin's Bottle of Flight (Concentrated)</option>
+                        <option value="mihi">Mihi's Bottle of Devotion</option>
+                    </select>
+                </label>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Added Acessory (Optional)</legend>
+                <label><input type="radio" name="method" value="chainnecklace">Chain Necklace</label>
+                <label><input type="radio" name="method" value="stringnecklace">Brown String Necklace</label>
+                <label><input type="radio" name="method" value="blacknecklace">Black String Necklace</label>
+                <label><input type="radio" name="method" value="keychain">Keychain Ring</label>
+                <label><input type="radio" name="method" value="none">None</label>
+
+            </fieldset>
+
+            <label>Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+
+            <input type="submit" value="Place Your Order">
+        </form>
+
+
+    </main>
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2025 &bull; Sydney Wilson &bull; Livadi's Arcana and Glass</p>
+
+    </footer>
+
+</body>
+
+</html>

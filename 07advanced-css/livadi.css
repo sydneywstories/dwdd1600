@@ -1,0 +1,329 @@
+/* Prevent Problems on Different Browswers */
+* {box-sizing: border-box;}
+
+body {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* header stuff here */
+header {
+    background-color: #553a59;
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #e8ddc9;
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+
+/* small screen navigation */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to bottom, #e8ddc9, #e9b57c)
+
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding:.8rem;
+        color: #553a59;
+        text-decoration: none;
+        border-bottom: solid 1px #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    nav .active a {
+        background-color: #553a59;
+        color: #e8ddc9;
+        
+    }
+
+
+
+} /* end small screens */
+
+/* LARGE SCREEN NAVIGATION */
+@media only screen and (min-width: 801px) {
+
+nav {
+    background-color: #e8ddc9
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #553a59;
+    font-weight: 700;
+}
+
+nav li.active a {
+    background-color: #553a59;
+    color: #e8ddc9;
+    
+}
+
+nav li a:hover {
+    color: #e9b57c;
+}
+
+} /* end LARGE screens */
+
+/* main stuff here */
+
+main {
+    padding: 1rem 10px
+}
+
+main h1 {
+    color: #553a59;
+}
+
+main h2 {
+    color: #553a59;
+    margin-bottom: .2rem;
+}
+main h3 {
+    color:#553a59
+}
+main p {
+    margin: 0;
+    color: #334;
+}
+
+main p.moreflavors {
+    font-size: .7rem;
+}
+
+main p.comments {
+    font-size: .7rem;
+}
+
+main ol {
+    color: #334;
+    font-size: .9rem;
+    
+}
+
+main dl dt {
+    color: #2a5778;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #553a59;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main ul {
+    color: #334;
+
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+main strong {
+    font-weight: 700;
+    color: #334;
+}
+main em {
+    font-weight: 300;
+}
+
+main address {
+    font-style: normal;
+    font-size: .7rem;
+    background-color: #e8d7f1;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 3px solid #e8ddc9;
+    width: 200px;
+}
+
+
+main a {
+    color:#2a5778;
+    text-decoration: none;
+}
+
+main a:hover{
+    color:#553a59;
+    text-decoration: underline;
+}
+
+.myForm fieldset {
+    border: 2px solid #553a59;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+
+}
+
+.myForm legend {
+    color: #2a5778;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+    color: #553a59;
+
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea, .myForm [type=potion] {
+    display: block;
+
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myform textarea {
+    border: solid 1px #553a59;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .5rem;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    
+}
+
+.myForm textarea {
+    height: 6rem;
+    width: 11rem;
+}
+
+.myForm :required {
+    background-color: rgba(232, 221, 201, 0.3)
+}
+
+.myForm [type=submit] {
+    background-color: #553a59;
+    border: solid 2px #e8d7f1;
+    padding: 10px 2rem;
+    border-radius: 10px;
+    color: #e8ddc9;
+    margin: 1rem 0 0 1vw;
+    
+}
+
+.myForm [type=submit]:hover {
+    color: #e9b57c;
+    background-color: #2a5778;
+    border: solid 4px #e8d7f1;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* main image stuff here*/
+
+figure.elio {
+    margin: 0 0 0 10px;
+    width: 25%;
+    float: right;
+
+}
+
+figure.elio img {
+    width: 100%;
+    height: auto;
+
+}
+
+figure.elio figcaption {
+    text-align: center;
+    font-size: .5rem;
+    font-style: italic;
+    color: #553a59;
+}
+
+/* gallery stuff here */
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+   
+
+}
+
+div.gallery figure {
+    margin: 0;
+
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .9rem;
+    color:#2a5778;
+  
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery img {
+    border-radius: 5px;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(42,87,120,0.7);
+    border: solid 2px #e8d7f1;
+}
+   
+
+
+
+/* footer stuff here */
+
+footer {
+    background-color: #553a59;
+    text-align: center;
+    padding: 1rem;
+
+
+}
+
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    color: #e8ddc9;
+    letter-spacing: 2.5px;
+
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: auto;
+
+}
+
